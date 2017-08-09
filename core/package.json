@@ -1,0 +1,27 @@
+{
+  "name": "animation-strip-generator",
+  "version": "1.0.0",
+  "description": "A tool for creating sprite animations from image sequences.",
+  "main": "generator.js",
+  "bin": {
+    "animation-strip-generator": "./main.js"
+  },
+  "author": "Vlad",
+  "license": "MIT",
+  "repository": "https://github.com/electron/",
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "jimp": "^0.2.24",
+    "imagemin": "^5.2.1",
+    "imagemin-mozjpeg": "^6.0.0",
+    "imagemin-pngquant": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.1.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.11.1",
+    "mkdirp": "^0.5.1",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.0"
+  }
+}

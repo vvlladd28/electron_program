@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="foundation.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<form>
+    <div class="row">
+        <div class="medium-12 columns">
+            <h1>Sprite Animation Generator</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="medium-12 columns">
+            <label>
+                Animation
+                <span class="input-group">
+                    <input class="input-group-field" type="text" name="source" placeholder="/path/to/your/image/sequence">
+                    <span class="input-group-button">
+                        <button class="button" type="button" id="chooseSource">Choose Directory</button>
+                    </span>
+                </span>
+            </label>
+            <label>
+                Destination
+                <span class="input-group">
+                    <input class="input-group-field" type="text" name="destination" placeholder="/path/to/your/generated/files">
+                    <span class="input-group-button">
+                        <button class="button" type="button" id="chooseDestination">Choose Directory</button>
+                    </span>
+                </span>
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="medium-6 columns">
+            <label>
+                Name
+                <input type="text" name="name" placeholder="animation">
+            </label>
+        </div>
+        <div class="medium-6 columns">
+            <label>
+                FPS
+                <input type="number" min="12" max="48" name="fps" placeholder="30">
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="medium-12 columns">
+            <button class="large expanded button" type="submit">Apply</button>
+        </div>
+    </div>
+</form>
+</body>
+<script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+</script>
+</html>

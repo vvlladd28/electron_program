@@ -1,0 +1,35 @@
+{
+  "name": "sprite-animation-generator",
+  "version": "1.0.0",
+  "productName": "Sprite Animation Generator",
+  "description": "Simple Electron app providing a GUI",
+  "main": "main.js",
+  "repository": "https://github.com/electron/",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager ./ --platform=darwin,win32 --arch=x64 --prune --overwrite",
+    "build-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --out=./../release-build/",
+    "build-win32": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=./../release-build/",
+    "build-win64": "electron-packager . --overwrite --platform=win32 --arch=x64 --out=./../release-build/",
+    "build-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --prune=true --out=./../release-build/"
+  },
+  "license": "MIT",
+  "author": "Vlad",
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "jimp": "^0.2.24",
+    "imagemin": "^5.2.1",
+    "imagemin-mozjpeg": "^6.0.0",
+    "imagemin-pngquant": "^5.0.0"
+  },
+  "devDependencies": {
+    "electron-packager": "^7.7.0",
+    "electron-prebuilt": "^1.4.13",
+    "eslint": "^3.1.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.11.1",
+    "mkdirp": "^0.5.1",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.0"
+  }
+}

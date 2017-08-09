@@ -1,0 +1,19 @@
+{
+  "name": "animation-strip-generator",
+  "version": "1.0.0",
+  "description": "A tool for creating sprite animations from image sequences.",
+  "main": "./../core/generator",
+  "scripts": {
+    "clean": "rm -rf ../test/output/*",
+    "start": "npm run clean; ./main.js ../test/animation ../test/output --name bell --fps 30"
+  },
+  "bin": {
+    "animation-strip-generator": "./main.js"
+  },
+  "author": "Vlad",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.9.0"
+  }
+}
