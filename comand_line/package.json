@@ -13,7 +13,7 @@
   "author": "Vlad",
   "license": "MIT",
   "dependencies": {
-    "colors": "^1.1.2",
+    "colors": "^1.4.1",
     "commander": "^2.9.0"
   }
 }
