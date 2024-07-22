@@ -1,4 +1,4 @@
-electron_program
+electron program
 
 В теці release-build знаходяться скомпільований проект.
 В теці test/input знаходяться файли для тесту
